@@ -31,7 +31,7 @@ plainwhite:
   - title: Publications
     url: /publications/
   - title: Resume
-    url: "/resume.pdf"
+    url: "/resume.pdf/"
     # dribbble: jekyll
     # flickr:   jekyll
     # instagram: jekyll
