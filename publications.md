@@ -29,24 +29,24 @@ N.J. and H.-C.L. contributed equally to this work.<br>
    Chang, P.C., Wu, H.L., **Lin, H.C.**, Wang, K.C. & Shi, G.Y.<br>
    ***J Thromb Haemost*** 8, 194-201 (2010).
 
-1. Development and Application of High Throughput Methods for Interrogating RNA Binding Specificity.\
-   Lin, H. C.\
-   Case Western Reserve University (2017).\
+1. Development and Application of High Throughput Methods for Interrogating RNA Binding Specificity.<br>
+   Lin, H. C.<br>
+   Case Western Reserve University (2017).<br>
    Ph.D. Dissertation.
 
-2. Study the Function of Kringle Proteins in Atherosclerosis.\
-   Lin, H. C.\
-   National Cheng Kung University Library, Taiwan (2007)\
+2. Study the Function of Kringle Proteins in Atherosclerosis.<br>
+   Lin, H. C.<br>
+   National Cheng Kung University Library, Taiwan (2007)<br>
    Master Thesis.
 
 # Conference Talks
 
-1. Kinetic isotope effects on catalysis by the HDV ribozyme-precise determination of isotope ratios using electrospray ionization time-of-flight mass spectrometry\
-   **Hsuan-Chun Lin**, Benjamin Weissman, Syed Shahbaz Gardezi, Vernon Anderson, Darrin York, Joseph Piccirilli, Michael Harris\
+1. Kinetic isotope effects on catalysis by the HDV ribozyme-precise determination of isotope ratios using electrospray ionization time-of-flight mass spectrometry<br>
+   **Hsuan-Chun Lin**, Benjamin Weissman, Syed Shahbaz Gardezi, Vernon Anderson, Darrin York, Joseph Piccirilli, Michael Harris<br>
    2018 ACS National meeting New Orleans, March 22-26
 
-2. Next-generation tools for RNA enzymology: Determination of rate and equilibrium constants for large populations of RNA substrate variants using high throughput sequencing\
-   **Hsuan-Chun Lin**\
+2. Next-generation tools for RNA enzymology: Determination of rate and equilibrium constants for large populations of RNA substrate variants using high throughput sequencing<br>
+   **Hsuan-Chun Lin**<br>
    2014 Rustbelt RNA meeting Pittsburgh, October 17-18
 
 
