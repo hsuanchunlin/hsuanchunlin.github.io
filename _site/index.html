@@ -41,7 +41,7 @@
                 </li>
               
                 <li>
-                  <a href="/resume.pdf/">Resume</a>
+                  <a href="/resume.pdf">Resume</a>
                 </li>
               
             </ul>
@@ -61,16 +61,27 @@
 <ul class="posts">
     <li>
       <h1 id="posts-label">posts</h1>
-    </li><li><a class="post-link" href="/python/r/2020/05/03/test.html">
-          <h2 class="post-title">Test</h2>
+    </li><li><a class="post-link" href="/python/scikit-learn/bagging/2020/05/03/Bagging.html">
+          <h2 class="post-title">Implement bagging and optimize models by scikit-learn</h2>
         </a>
         <div class="post-meta">
-          <ul class="post-categories"><li>Python</li><li>R</li></ul>
+          <ul class="post-categories"><li>Python</li><li>scikit-learn</li><li>bagging</li></ul>
           <div class="post-date">
             <i class="icon-calendar"></i>
             May 3, 2020</div>
         </div>
-        <div class="post"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+        <div class="post"><h1 id="optimized-models">Optimized models</h1>
+<h2 id="import-necessary-packages">Import necessary packages</h2>
+<p>For optimization of hyper parameters, I have applied <strong>GridSearchCV</strong> and for cross validation, I used <strong>StratifiedKFold</strong>.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">StratifiedKFold</span><span class="p">,</span> <span class="n">GridSearchCV</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span><span class="p">,</span> <span class="n">VotingClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span><span class="p">,</span> <span class="n">BernoulliNB</span>
+</code></pre></div></div>
 </div>
       </li></ul>
 

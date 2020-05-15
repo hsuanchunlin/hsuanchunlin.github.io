@@ -2,7 +2,7 @@
 layout: post
 title:  "Implement bagging and optimize models by scikit-learn"
 date:   2020-05-03 21:03:36 +0530
-categories: Python R
+categories: Python scikit-learn bagging
 ---
 # Optimized models 
 ## Import necessary packages
