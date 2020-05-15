@@ -4,29 +4,29 @@ title: Publications
 permalink: /publications/
 ---
 # Publications
-1. Rules of RNA specificity of hnRNP A1 revealed by global and quantitative analysis of its affinity distribution.\
-Jain, N.; **Lin, H. C.** ; Morgan, C. E.; Harris, M. E.; Tolbert, B. S.\
-N.J. and H.-C.L. contributed equally to this work.\
+1. Rules of RNA specificity of hnRNP A1 revealed by global and quantitative analysis of its affinity distribution.<br>
+Jain, N.; **Lin, H. C.** ; Morgan, C. E.; Harris, M. E.; Tolbert, B. S.<br>
+N.J. and H.-C.L. contributed equally to this work.<br>
 ***Proc Natl Acad Sci USA***  2017. 
 
-2. Analysis of the RNA Binding Specificity Landscape of C5 Protein Reveals Structure and Sequence Preferences that Direct RNase P Specificity.\
-**Lin, H. C.**; Zhao, J.; Niland, C. N.; Tran, B.; Jankowsky, E.; Harris, M. E.\
+2. Analysis of the RNA Binding Specificity Landscape of C5 Protein Reveals Structure and Sequence Preferences that Direct RNase P Specificity.<br>
+**Lin, H. C.**; Zhao, J.; Niland, C. N.; Tran, B.; Jankowsky, E.; Harris, M. E.<br>
 ***Cell Chem Biol.*** 2016, 23 (10), 1271-1281.
 
-3. Determination of relative rate constants for in vitro RNA processing reactions by internal competition.\
-   **Lin, H. C.**, Yandek, L.E., Gjermeni, I. & Harris, M.E.\
+3. Determination of relative rate constants for in vitro RNA processing reactions by internal competition.<br>
+   **Lin, H. C.**, Yandek, L.E., Gjermeni, I. & Harris, M.E.<br>
    ***Anal. Biochem.*** 467, 54-61 (2014).
 
-4. Determination of the Specificity Landscape for Ribonuclease P Processing of Precursor tRNA 5' Leader Sequences.\
-   Niland, C. N.; Zhao, J.; **Lin, H. C.**; Anderson, D. R.; Jankowsky, E.; Harris, M.E.\
+4. Determination of the Specificity Landscape for Ribonuclease P Processing of Precursor tRNA 5' Leader Sequences.<br>
+   Niland, C. N.; Zhao, J.; **Lin, H. C.**; Anderson, D. R.; Jankowsky, E.; Harris, M.E.<br>
    ***ACS chemical biology***  2016, 11 (8), 2285-92.
 
-5. Alternative substrate kinetics of Escherichia coli ribonuclease P: determination of relative rate constants by internal competition.\
-   Yandek, L.E., **Lin, H.C.** ,& Harris, M.E.\
+5. Alternative substrate kinetics of Escherichia coli ribonuclease P: determination of relative rate constants by internal competition.<br>
+   Yandek, L.E., **Lin, H.C.** ,& Harris, M.E.<br>
    ***J. Biol. Chem.*** 288, 8342-8354 (2013).
 
-6. Human plasminogen kringle 1-5 reduces atherosclerosis and neointima formation in mice by suppressing the inflammatory signaling pathway.\
-   Chang, P.C., Wu, H.L., **Lin, H.C.**, Wang, K.C. & Shi, G.Y.\
+6. Human plasminogen kringle 1-5 reduces atherosclerosis and neointima formation in mice by suppressing the inflammatory signaling pathway.<br>
+   Chang, P.C., Wu, H.L., **Lin, H.C.**, Wang, K.C. & Shi, G.Y.<br>
    ***J Thromb Haemost*** 8, 194-201 (2010).
 
 1. Development and Application of High Throughput Methods for Interrogating RNA Binding Specificity.\
