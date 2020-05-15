@@ -5,11 +5,11 @@ date:   2020-05-03 21:03:36 +0530
 categories: Python scikit-learn bagging
 ---
 
-For optimization of hyper parameters, I have applied **GridSearchCV** and for cross validation, I used **StratifiedKFold**.
+Bagging is an ensamble method which would be helpful when the model is complex, easy to overfit.  We can do voting or average the results from different models. It is not necessary to include all the models but just those estimators that can give you the best result. 
+For optimization of hyper parameters, I have applied **GridSearchCV**. For cross validation, I used **StratifiedKFold**. The best estimators will be stored in a list and **VotingClassifier** is applied to implement the bagging process.
 
 [Link to the jupyter notebook](https://github.com/hsuanchunlin/bagging-Titanic-kaggle)
 
-# Optimized models 
 ## Import necessary packages
 
 
