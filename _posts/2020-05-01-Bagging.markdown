@@ -6,6 +6,7 @@ categories: Python scikit-learn bagging
 ---
 # Optimized models 
 ## Import necessary packages
+[Link to the jupyter notebook](https://github.com/hsuanchunlin/bagging-Titanic-kaggle)
 For optimization of hyper parameters, I have applied **GridSearchCV** and for cross validation, I used **StratifiedKFold**.
 ```python
 from sklearn.model_selection import train_test_split, StratifiedKFold, GridSearchCV
