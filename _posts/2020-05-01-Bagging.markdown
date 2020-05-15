@@ -4,12 +4,14 @@ title:  "Implement bagging and optimize models by scikit-learn"
 date:   2020-05-03 21:03:36 +0530
 categories: Python scikit-learn bagging
 ---
-# Optimized models 
-## Import necessary packages
 
 For optimization of hyper parameters, I have applied **GridSearchCV** and for cross validation, I used **StratifiedKFold**.
 
 [Link to the jupyter notebook](https://github.com/hsuanchunlin/bagging-Titanic-kaggle)
+
+# Optimized models 
+## Import necessary packages
+
 
 ```python
 from sklearn.model_selection import train_test_split, StratifiedKFold, GridSearchCV
