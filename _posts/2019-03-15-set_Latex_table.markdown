@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Use latex and github table style in my jekyll blog"
-date:   2019-04-19 08:43:12 +0530
+date:   2019-03-15 08:43:12 +0530
 categories: latex jekyll
 ---
+This is my little note about setting latex and table format for jekyll blog.
+
 # For latex setting
 ## _config.yml
 add the following commands into your _config.yml
