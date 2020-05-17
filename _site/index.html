@@ -6,6 +6,10 @@
 <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
 <title>My playground for data science</title>
+<!-- Mathjax Support -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>My playground for data science | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
 <meta name="generator" content="Jekyll v4.0.1" />
@@ -20,6 +24,7 @@
 <script type="application/ld+json">
 {"headline":"My playground for data science","author":{"@type":"Person","name":"Hsuan-Chun Lin"},"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","url":"http://localhost:4000/","name":"My playground for data science","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
 </head>
   <body>
     <main class="container">
@@ -33,15 +38,15 @@
               <li>
                 <i class="icon-github-circled"></i>
               </li>
+            </a><a href="https://www.linkedin.com/in/hsuan-chun-lin">
+              <li>
+                <i class="icon-linkedin-squared"></i>
+              </li>
             </a></ul><nav class="navigation">
             <ul>
               
                 <li>
                   <a href="/publications/">Publications</a>
-                </li>
-              
-                <li>
-                  <a href="/resume.pdf">Resume</a>
                 </li>
               
             </ul>
@@ -61,7 +66,21 @@
 <ul class="posts">
     <li>
       <h1 id="posts-label">posts</h1>
-    </li><li><a class="post-link" href="/python/scikit-learn/bagging/2020/05/03/Bagging.html">
+    </li><li><a class="post-link" href="/python/keras/2020/05/04/concatenate-keras.html">
+          <h2 class="post-title">Kaggle study note: concatenate different types of layers in keras</h2>
+        </a>
+        <div class="post-meta">
+          <ul class="post-categories"><li>Python</li><li>keras</li></ul>
+          <div class="post-date">
+            <i class="icon-calendar"></i>
+            May 4, 2020</div>
+        </div>
+        <div class="post"><p>```python
+#temporal input branch
+temporal_input_layer = Input(shape=(13,5))
+main_rnn_layer = layers.LSTM(64, return_sequences=True, recurrent_dropout=0.2)(temporal_input_layer)</p>
+</div>
+      </li><li><a class="post-link" href="/python/scikit-learn/bagging/2020/05/03/Bagging.html">
           <h2 class="post-title">Implement bagging and optimize models by scikit-learn</h2>
         </a>
         <div class="post-meta">
@@ -70,17 +89,35 @@
             <i class="icon-calendar"></i>
             May 3, 2020</div>
         </div>
-        <div class="post"><h1 id="optimized-models">Optimized models</h1>
-<h2 id="import-necessary-packages">Import necessary packages</h2>
-<p>For optimization of hyper parameters, I have applied <strong>GridSearchCV</strong> and for cross validation, I used <strong>StratifiedKFold</strong>.</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">StratifiedKFold</span><span class="p">,</span> <span class="n">GridSearchCV</span>
-<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
-<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span><span class="p">,</span> <span class="n">VotingClassifier</span>
-<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
-<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
-<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span><span class="p">,</span> <span class="n">BernoulliNB</span>
+        <div class="post"><p>Bagging is an ensamble method which would be helpful when the model is complex, easy to overfit.  We can do voting or average the results from different models. It is not necessary to include all the models but just those estimators that can give you the best result. 
+For optimization of hyper parameters, I have applied <strong>GridSearchCV</strong>. For cross validation, I used <strong>StratifiedKFold</strong>. The best estimators will be stored in a list and <strong>VotingClassifier</strong> is applied to implement the bagging process.</p>
+</div>
+      </li><li><a class="post-link" href="/note/2019/04/18/metrics-of-machine-learning.html">
+          <h2 class="post-title">Note: Summary of scores about evaluation of machine learning models</h2>
+        </a>
+        <div class="post-meta">
+          <ul class="post-categories"><li>Note</li></ul>
+          <div class="post-date">
+            <i class="icon-calendar"></i>
+            Apr 18, 2019</div>
+        </div>
+        <div class="post"><p>This is the note of the scores which is applied to evaluate the performance of machine learning models. In this study note, it includes <strong>Accuracy</strong>, <strong>Confusion Matrix</strong>, <strong>Precision</strong>, <strong>Recall</strong>, and <strong>F1-score</strong>. For visualize the performance, we can use Receiver Operating Characteristic Curve (ROC curve) and Area under curve (AUC)</p>
+</div>
+      </li><li><a class="post-link" href="/latex/jekyll/2019/04/18/set_Latex_table.html">
+          <h2 class="post-title">Use latex and github table style in my jekyll blog</h2>
+        </a>
+        <div class="post-meta">
+          <ul class="post-categories"><li>latex</li><li>jekyll</li></ul>
+          <div class="post-date">
+            <i class="icon-calendar"></i>
+            Apr 18, 2019</div>
+        </div>
+        <div class="post"><h1 id="for-latex-setting">For latex setting</h1>
+<h2 id="_configyml">_config.yml</h2>
+<p>add the following commands into your _config.yml</p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
+<span class="na">kramdown</span><span class="pi">:</span>
+   <span class="na">math_engine</span><span class="pi">:</span> <span class="s">mathjax</span>
 </code></pre></div></div>
 </div>
       </li></ul>
