@@ -35,7 +35,7 @@ Recall is a metric that tells the frequency of the correct predictions that are 
 
 $$
 recall = \frac{\textrm{true positives}}{\textrm{true positives + false negatives}}
-= \frac{\textrm{false positives}}{\textrm{Number of real positive  samples}}
+= \frac{\textrm{true positives}}{\textrm{Number of real positive  samples}}
 $$
 
 ## False positive rate (FPR) / Specificity
