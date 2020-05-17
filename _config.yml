@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Hsuan-Chun Lin
-  tagline: Developer | Biochemist
+  tagline: Developer | Biochemist | RNA
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   dark_mode: true # set true to add dark mode toggle
@@ -26,12 +26,12 @@ plainwhite:
     rss: rss
     
   navigation:
-  - title: About me
-    url: "/about/"
+  #- title: About me
+  #  url: "/about/"
   - title: Publications
     url: /publications/
-  - title: Resume
-    url: "/resume.pdf"
+  #- title: Resume
+  #  url: "/resume.pdf"
     # dribbble: jekyll
     # flickr:   jekyll
     # instagram: jekyll
