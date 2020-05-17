@@ -67,5 +67,5 @@ $$
 
 ## Precision-recall curve
 - Usage: Balancing the precision recall value can be a tricky task. This trade-off can be represented using the precision-recall curve.
-# References
+# Reference
 https://www.studytonight.com/post/how-good-is-my-machine-learning-model-how-do-i-improve-its-performance
