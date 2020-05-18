@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "Kaggle study note: concatenate different types of layers in keras"
+date:   2020-05-04 12:06:14 +0530
+categories: Python Bokeh
+---
