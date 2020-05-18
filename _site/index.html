@@ -22,7 +22,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="My playground for data science" />
 <script type="application/ld+json">
-{"headline":"My playground for data science","author":{"@type":"Person","name":"Hsuan-Chun Lin"},"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","url":"http://localhost:4000/","name":"My playground for data science","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Hsuan-Chun Lin"},"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","url":"http://localhost:4000/","headline":"My playground for data science","name":"My playground for data science","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -47,6 +47,10 @@
               
                 <li>
                   <a href="/publications/">Publications</a>
+                </li>
+              
+                <li>
+                  <a href="/resume.pdf">Resume</a>
                 </li>
               
             </ul>
@@ -75,10 +79,7 @@
             <i class="icon-calendar"></i>
             May 4, 2020</div>
         </div>
-        <div class="post"><p>```python
-#temporal input branch
-temporal_input_layer = Input(shape=(13,5))
-main_rnn_layer = layers.LSTM(64, return_sequences=True, recurrent_dropout=0.2)(temporal_input_layer)</p>
+        <div class="post"><p>In Kaggle competition of COVID-19 case prediction, we sometimes need to combind different types of layers and branch the output. It is efficient to create a template for the next application.</p>
 </div>
       </li><li><a class="post-link" href="/python/scikit-learn/bagging/2020/05/03/Bagging.html">
           <h2 class="post-title">Implement bagging and optimize models by scikit-learn</h2>
@@ -103,22 +104,16 @@ For optimization of hyper parameters, I have applied <strong>GridSearchCV</stron
         </div>
         <div class="post"><p>This is the note of the scores which is applied to evaluate the performance of machine learning models. In this study note, it includes <strong>Accuracy</strong>, <strong>Confusion Matrix</strong>, <strong>Precision</strong>, <strong>Recall</strong>, and <strong>F1-score</strong>. For visualize the performance, we can use Receiver Operating Characteristic Curve (ROC curve) and Area under curve (AUC)</p>
 </div>
-      </li><li><a class="post-link" href="/latex/jekyll/2019/04/18/set_Latex_table.html">
+      </li><li><a class="post-link" href="/latex/jekyll/2019/03/14/set_Latex_table.html">
           <h2 class="post-title">Use latex and github table style in my jekyll blog</h2>
         </a>
         <div class="post-meta">
           <ul class="post-categories"><li>latex</li><li>jekyll</li></ul>
           <div class="post-date">
             <i class="icon-calendar"></i>
-            Apr 18, 2019</div>
+            Mar 14, 2019</div>
         </div>
-        <div class="post"><h1 id="for-latex-setting">For latex setting</h1>
-<h2 id="_configyml">_config.yml</h2>
-<p>add the following commands into your _config.yml</p>
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
-<span class="na">kramdown</span><span class="pi">:</span>
-   <span class="na">math_engine</span><span class="pi">:</span> <span class="s">mathjax</span>
-</code></pre></div></div>
+        <div class="post"><p>This is my little note about setting latex and table format for jekyll blog.</p>
 </div>
       </li></ul>
 
