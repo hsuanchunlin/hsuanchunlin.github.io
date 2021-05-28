@@ -1,65 +1,100 @@
 ---
 layout: post
-title:  "Kaggle study note: concatenate different types of layers in keras"
-date:   2020-05-04 12:06:14 +0530
-categories: Python keras
+title:  "Install and Use Mac-optimized TensorFlow and TensorFlow Addons"
+date:   2021-05-28 24:06:14 +0530
+categories: Python TensorFlow
 ---
-In Kaggle competition of COVID-19 case prediction, we sometimes need to combind different types of layers and branch the output. It is efficient to create a template for the next application.
 
-Here is my study note and template from [this notebook](https://www.kaggle.com/frlemarchand/covid-19-forecasting-with-an-rnn) published by Francois Lemarchand.
-
-```python 
-#A input branch
-A_input_layer = Input(shape=(13,5))
-main_LSTM_layer = layers.LSTM(64, return_sequences=True, recurrent_dropout=0.2)(A_input_layer)
-
-#B input branch
-B_input_layer = Input(shape=(5,))
-B_dense = layers.Dense(16)(B_input_layer)
-B_dropout = layers.Dropout(0.2)(B_dense)
-
-#cases output branch
-LSTM_c = layers.LSTM(32)(main_LSTM_layer)
-merge_c = layers.Concatenate(axis=-1)([LSTM_c,B_dropout])
-dense_c = layers.Dense(128)(merge_c)
-dropout_c = layers.Dropout(0.3)(dense_c)
-cases = layers.Dense(1, activation=layers.LeakyReLU(alpha=0.1),name="cases")(dropout_c)
-
-#fatality output branch
-LSTM_f = layers.LSTM(32)(main_LSTM_layer)
-merge_f = layers.Concatenate(axis=-1)([LSTM_f,B_dropout])
-dense_f = layers.Dense(128)(merge_f)
-dropout_f = layers.Dropout(0.3)(dense_f)
-fatalities = layers.Dense(1, activation=layers.LeakyReLU(alpha=0.1), name="fatalities")(dropout_f)
+# Install and Use Mac-optimized TensorFlow and TensorFlow Addons
 
 
-model = Model([temporal_input_layer,demographic_input_layer], [cases,fatalities])
+Recently Apple had provided a Mac optimized TensorFlow which is able to utilize Mac's machine learning framework and GPUs. The link to Apple's blog is [here](https://blog.tensorflow.org/2020/11/accelerating-tensorflow-performance-on-mac.html). Because I am using Anaconda and conda as my major python virtual environment manager, here is my note for installation and testing.
 
-model.summary()
+## Set and find the env in Anaconda
+For Mac-optimized TensorFlow, we need an environment in python 3.8. You can replace myenv by any preferred name.
+
+```
+conda create -n myenv python=3.8
+```
+After creating the python environment, find your virtual environment folder in
+ 
+```
+~/opt/Anaconda3/envs/myenv
+```
+## Installation
+
+Now it's time to install the Mac-optimized TensorFlow.
+Open a terminal window and activate the virtual environment by
+
+```
+conda activate myenv
+```
+Then goto the official github [here](https://github.com/apple/tensorflow_macos)
+
+Please copy the following command from the official website and remove the '%' mark ahead if the command is copied from the official site.
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/apple/tensorflow_macos/master/scripts/download_and_install.sh)"
+
+```
+After downloading, the program will ask you where to install the tensorflow. Now you can put where your anaconda virtual environment is.
+
+```
+~/opt/Anaconda3/envs/myenv
 ```
 
-## Model visualization
+## Usage
+When use the Mac-optimized TensorFlow, import TensorFlow from tensorflow.compat.v2. Turning off eager execution caused some issues on my CycleGAN code and there are still issues when I used model.fit without eager execution. I have tried using TensorFlow without turning eager execution off on my 15 inch Macbook Pro 2019 with AMD GPU and TensorFlow was still able to utilize AMD GPU to run my training.
 
 ```python
-plot_model(model, show_shapes=True, show_layer_names=True)
+import tensorflow.compat.v2 as tf
+tf.enable_v2_behavior()
+
+#Option to disable eager execution
+from tensorflow.python.framework.ops import disable_eager_execution
+disable_eager_execution()
+
+#Import mlcompute module to use the optional set_mlc_device API for device selection with ML Compute.
+from tensorflow.python.compiler.mlcompute import mlcompute
+mlcompute.set_mlc_device(device_name='any') 
+#Available options are 'cpu', 'gpu', and 'any'.
+
 ```
 
-## Setting training
+## Test the installation
+A jupyter notebook or a python .py file is created and the following code can be copied to execute to test the performance of TensorFlow installation. Or you can find here [easy_test.py](./easy_test.py).
 
 ```python
+import tensorflow.compat.v2 as tf
+tf.enable_v2_behavior()
 
-callbacks = [ReduceLROnPlateau(monitor='val_loss', patience=4, verbose=1, factor=0.6),
-             EarlyStopping(monitor='val_loss', patience=20),
-             ModelCheckpoint(filepath='best_model.h5', monitor='val_loss', save_best_only=True)]
-model.compile(loss=[tf.keras.losses.MeanSquaredLogarithmicError(),tf.keras.losses.MeanSquaredLogarithmicError()], optimizer="adam")
+#Option to disable eager execution
+from tensorflow.python.framework.ops import disable_eager_execution
+disable_eager_execution()
+
+#Import mlcompute module to use the optional set_mlc_device API for device selection with ML Compute.
+from tensorflow.python.compiler.mlcompute import mlcompute
+mlcompute.set_mlc_device(device_name='any')
+#Available options are 'cpu', 'gpu', and 'any'.
+
+mnist = tf.keras.datasets.mnist
+
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0
+
+model = tf.keras.models.Sequential([
+  tf.keras.layers.Flatten(input_shape=(28, 28)),
+  tf.keras.layers.Dense(128, activation='relu'),
+  tf.keras.layers.Dropout(0.2),
+  tf.keras.layers.Dense(10)
+])
+
+loss_fn = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+
+model.compile(optimizer='adam',
+              loss=loss_fn,
+              metrics=['accuracy'])
+
+model.fit(x_train, y_train, epochs=1)
 ```
-
-## Training
-```python
-history = model.fit([X_temporal_train,X_demographic_train], [Y_cases_train, Y_fatalities_train], 
-          epochs = 250, 
-          batch_size = 16, 
-          validation_data=([X_temporal_test,X_demographic_test],  [Y_cases_test, Y_fatalities_test]), 
-          callbacks=callbacks)
-
-```
+The sorce code is modified from the tutorial of [TensorFlow site](https://www.tensorflow.org/tutorials/quickstart/beginner).
