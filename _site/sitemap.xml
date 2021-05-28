@@ -9,6 +9,16 @@
             <lastmod>2019-06-07T00:00:00+00:00</lastmod>
             <priority>1.00</priority>
         </url><url>
+                <loc>http://localhost:4000/python/tensorflow/2021/05/27/mac-tensorflow.html</loc>
+                <lastmod>2021-05-27T14:36:14-04:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+            </url><url>
+                <loc>http://localhost:4000/python/keras/2020/05/04/concatenate-keras.html</loc>
+                <lastmod>2020-05-04T02:36:14-04:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+            </url><url>
                 <loc>http://localhost:4000/python/scikit-learn/bagging/2020/05/03/Bagging.html</loc>
                 <lastmod>2020-05-03T11:33:36-04:00</lastmod>
                 <changefreq>weekly</changefreq>

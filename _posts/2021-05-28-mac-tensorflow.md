@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Install and Use Mac-optimized TensorFlow and TensorFlow Addons"
-date:   2020-05-28 12:06:14 +0530
+date:   2021-05-28 00:06:14 +0530
 categories: Python TensorFlow
 ---
-# Install and Use Mac-optimized TensorFlow and TensorFlow Addons
+# Install and Use  Mac-optimized TensorFlow and TensorFlow Addons
 
 
 Recently Apple had provided a Mac optimized TensorFlow which is able to utilize Mac's machine learning framework and GPUs. The link to Apple's blog is [here](https://blog.tensorflow.org/2020/11/accelerating-tensorflow-performance-on-mac.html). Because I am using Anaconda and conda as my major python virtual environment manager, here is my note for installation and testing.
@@ -61,8 +61,7 @@ mlcompute.set_mlc_device(device_name='any')
 ```
 
 ## Test the installation
-A jupyter notebook or a python .py file is created and the following code can be copied to execute to test the performance of TensorFlow installation. Or you can find here [easy_test.py](./easy_test.py).
-
+A jupyter notebook or a python .py file is created and the following code can be copied to execute to test the performance of TensorFlow installation. 
 ```python
 import tensorflow.compat.v2 as tf
 tf.enable_v2_behavior()
