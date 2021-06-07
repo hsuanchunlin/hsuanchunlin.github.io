@@ -4,6 +4,7 @@ title:  "Customize keras layer"
 date:   2021-06-07 00:00:42 +0530
 categories: Python TensorFlow Keras
 ---
+
 # Class
 
 This note is to build a keras customized layer which could be used like a python function.
