@@ -22,7 +22,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="My playground for data science" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/","name":"My playground for data science","@type":"WebSite","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"My playground for data science","author":{"@type":"Person","name":"Hsuan-Chun Lin"},"@context":"https://schema.org"}</script>
+{"headline":"My playground for data science","@type":"WebSite","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","url":"http://localhost:4000/","author":{"@type":"Person","name":"Hsuan-Chun Lin"},"name":"My playground for data science","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -66,7 +66,47 @@
 <ul class="posts">
     <li>
       <h1 id="posts-label">posts</h1>
-    </li><li><a class="post-link" href="/python/tensorflow/2021/05/28/RNA_GAN.html">
+    </li><li><a class="post-link" href="/python/tensorflow/keras/2021/06/06/Keras-customize-layer.html">
+          <h2 class="post-title">Customize keras layer</h2>
+        </a>
+        <div class="post-meta">
+          <ul class="post-categories"><li>Python</li><li>TensorFlow</li><li>Keras</li></ul>
+          <div class="post-date">
+            <i class="icon-calendar"></i>
+            Jun 6, 2021</div>
+        </div>
+        <div class="post"><h1 id="class">Class</h1>
+</div>
+      </li><li><a class="post-link" href="/python/scikit-learn/2021/05/30/model-selection.html">
+          <h2 class="post-title">Model Selection to Prevent Over-fitting</h2>
+        </a>
+        <div class="post-meta">
+          <ul class="post-categories"><li>Python</li><li>scikit-learn</li></ul>
+          <div class="post-date">
+            <i class="icon-calendar"></i>
+            May 30, 2021</div>
+        </div>
+        <div class="post"><h2 id="demo-dataset">Demo Dataset</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
+<span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="p">.</span><span class="n">load_iris</span><span class="p">()</span>
+<span class="n">iris</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">iris</span><span class="p">.</span><span class="n">target</span><span class="p">.</span><span class="n">shape</span>
+</code></pre></div></div>
+</div>
+      </li><li><a class="post-link" href="/python/pca/k-means/scikit-learn/2021/05/29/RNA-Data.html">
+          <h2 class="post-title">Note for Data Exploration and Features Selection</h2>
+        </a>
+        <div class="post-meta">
+          <ul class="post-categories"><li>Python</li><li>PCA</li><li>k-means</li><li>scikit-learn</li></ul>
+          <div class="post-date">
+            <i class="icon-calendar"></i>
+            May 29, 2021</div>
+        </div>
+        <div class="post"><p>The full jupyter notebook is <a href="https://github.com/hsuanchunlin/ML_RNA_structure/blob/master/Data_analysis.ipynb">here</a>.</p>
+<h2 id="demo-dataset">Demo dataset</h2>
+<p>The following data is used to set up demos for the following data exploration templates.</p>
+</div>
+      </li><li><a class="post-link" href="/python/tensorflow/2021/05/28/RNA_GAN.html">
           <h2 class="post-title">Application of Generative Adversarial Network to Generate miRNA Like Structures</h2>
         </a>
         <div class="post-meta">

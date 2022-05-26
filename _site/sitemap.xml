@@ -9,6 +9,21 @@
             <lastmod>2019-06-07T00:00:00+00:00</lastmod>
             <priority>1.00</priority>
         </url><url>
+                <loc>http://localhost:4000/python/tensorflow/keras/2021/06/06/Keras-customize-layer.html</loc>
+                <lastmod>2021-06-06T14:30:42-04:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+            </url><url>
+                <loc>http://localhost:4000/python/scikit-learn/2021/05/30/model-selection.html</loc>
+                <lastmod>2021-05-30T14:30:42-04:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+            </url><url>
+                <loc>http://localhost:4000/python/pca/k-means/scikit-learn/2021/05/29/RNA-Data.html</loc>
+                <lastmod>2021-05-29T14:30:42-04:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+            </url><url>
                 <loc>http://localhost:4000/python/tensorflow/2021/05/28/RNA_GAN.html</loc>
                 <lastmod>2021-05-28T02:30:42-04:00</lastmod>
                 <changefreq>weekly</changefreq>
