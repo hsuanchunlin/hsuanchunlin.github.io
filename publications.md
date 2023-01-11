@@ -4,16 +4,20 @@ title: Publications
 permalink: /publications/
 ---
 # Publications
+
+1. A dissociative transition state in Hepatitis Delta Virus ribozyme catalysis. <br> 
+Benjamin Weissman, Şölen Ekesan, **Hsuan-Chun Lin**, Shahbaz Gardezi, Nansheng Li, Timothy J. Giese, Erika McCarthy, Michael E Harris, Darrin M York, and Joseph A Piccirilli,   ***J. Am. Chem. Soc***  in Press 2023.
+
 1. Rules of RNA specificity of hnRNP A1 revealed by global and quantitative analysis of its affinity distribution.<br>
 Jain, N.; **Lin, H. C.** ; Morgan, C. E.; Harris, M. E.; Tolbert, B. S.<br>
 N.J. and H.-C.L. contributed equally to this work.<br>
 ***Proc Natl Acad Sci USA***  2017. 
 
-2. Analysis of the RNA Binding Specificity Landscape of C5 Protein Reveals Structure and Sequence Preferences that Direct RNase P Specificity.<br>
+3. Analysis of the RNA Binding Specificity Landscape of C5 Protein Reveals Structure and Sequence Preferences that Direct RNase P Specificity.<br>
 **Lin, H. C.**; Zhao, J.; Niland, C. N.; Tran, B.; Jankowsky, E.; Harris, M. E.<br>
 ***Cell Chem Biol.*** 2016, 23 (10), 1271-1281.
 
-3. Determination of relative rate constants for in vitro RNA processing reactions by internal competition.<br>
+4. Determination of relative rate constants for in vitro RNA processing reactions by internal competition.<br>
    **Lin, H. C.**, Yandek, L.E., Gjermeni, I. & Harris, M.E.<br>
    ***Anal. Biochem.*** 467, 54-61 (2014).
 
