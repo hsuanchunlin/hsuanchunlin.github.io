@@ -6,7 +6,7 @@ permalink: /publications/
 # Publications
 
 1. A dissociative transition state in Hepatitis Delta Virus ribozyme catalysis. <br> 
-Benjamin Weissman, Şölen Ekesan, **Hsuan-Chun Lin**, Shahbaz Gardezi, Nansheng Li, Timothy J. Giese, Erika McCarthy, Michael E Harris, Darrin M York, and Joseph A Piccirilli,   ***J. Am. Chem. Soc***  in Press 2023.
+Benjamin Weissman, Şölen Ekesan, **Hsuan-Chun Lin**, Shahbaz Gardezi, Nansheng Li, Timothy J. Giese, Erika McCarthy, Michael E Harris, Darrin M York, and Joseph A Piccirilli,   ***J. Am. Chem. Soc*** 2023.
 
 1. Rules of RNA specificity of hnRNP A1 revealed by global and quantitative analysis of its affinity distribution.<br>
 Jain, N.; **Lin, H. C.** ; Morgan, C. E.; Harris, M. E.; Tolbert, B. S.<br>
