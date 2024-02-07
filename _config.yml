@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Hsuan-Chun Lin
-  tagline: Computational Biology | Bioinformatician | Biochemist | Machine learning | RNA |
+  tagline: Computational Biology | Biochemist | Machine learning | A happy self-learner 
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   dark_mode: true # set true to add dark mode toggle
@@ -22,7 +22,7 @@ plainwhite:
   social_links:
   #  twitter: thelehhman
     github:  hsuanchunlin
-    linkedIn: in/hsuan-chun-lin
+    #linkedIn: in/hsuan-chun-lin
     rss: rss
 
   navigation:
