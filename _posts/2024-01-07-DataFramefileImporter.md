@@ -4,6 +4,7 @@ title:  "Streamlining CSV Data Import with Swift TabularData, FileImporter and F
 date:   2024-01-07 00:00:42 +0530
 categories: Swift SwiftUI iOS macOS
 ---
+Handling CSV files in Swift can be a straightforward process with the help of TabularData. This framework provides a simple and efficient way to read and write CSV files. With TabularData, you can easily load and save CSV files with fileImporter and fileExporter. Here is how I set them up.
 
 # FileImporter
 When performing fileImporter, make sure the loading function is between if **url.startAccessingSecurityScopedResource()** and **url.stopAccessingSecurityScopedResource()** to make sure the program can access the file.
